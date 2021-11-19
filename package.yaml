@@ -1,7 +1,6 @@
 name:                geo2d
 version:             0.0.1
 github:              "githubuser/geo2d"
-license:             BSD3
 author:              "Andrew McKnight"
 maintainer:          "thedonk@gmail.com"
 copyright:           "2021 Andrew McKnight"

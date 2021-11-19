@@ -12,7 +12,6 @@ bug-reports:    https://github.com/githubuser/geo2d/issues
 author:         Andrew McKnight
 maintainer:     thedonk@gmail.com
 copyright:      2021 Andrew McKnight
-license:        BSD3
 build-type:     Simple
 extra-source-files:
     README.md
