@@ -13,7 +13,6 @@ author:         Andrew McKnight
 maintainer:     thedonk@gmail.com
 copyright:      2021 Andrew McKnight
 license:        BSD3
-license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
@@ -50,7 +49,6 @@ library
   build-depends:
       base >=4.7 && <5
     , containers
-    , gloss
     , ilist
     , mtl
     , random
