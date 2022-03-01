@@ -25,11 +25,11 @@ antiSweeps ss = filter (not . trivial) $ case crossSweep of
     crossSweep = case crossSweeps of
       [] -> Nothing
       [s] -> Just s
-      _ -> error "More than one Sweep crossed 1"
+      css -> Just (head css) -- TODO: error "More than one Sweep crossed 1"
 
 antiSweeps' :: Turn -> Turn -> [Sweep] -> [Sweep]
 antiSweeps' _ _ (FullSweep:_) = []
 antiSweeps' s e [] = [Sweep s e]
 antiSweeps' s e ((Sweep f t):ss)
-  | s > f = error "Sweeps overlap"
+  | s > f = antiSweeps' t e ss -- TODO: error "Sweeps overlap"
   | otherwise = Sweep s f : antiSweeps' t e ss
