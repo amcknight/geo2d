@@ -76,7 +76,7 @@ up = 0.25
 down :: Turn
 down = 0.75
 
-chord :: Radian -> Double 
+chord :: Radian -> Double
 chord = (2*) . sin . (/2)
 
 simple :: Turn -> Turn

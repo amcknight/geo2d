@@ -5,7 +5,7 @@ cabal-version: 1.12
 -- see: https://github.com/sol/hpack
 
 name:           geo2d
-version:        0.0.1
+version:        0.1.1
 description:    Please see the README on GitHub at <https://github.com/githubuser/geo2d#readme>
 homepage:       https://github.com/githubuser/geo2d#readme
 bug-reports:    https://github.com/githubuser/geo2d/issues

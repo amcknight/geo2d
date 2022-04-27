@@ -28,7 +28,7 @@ module Geometry.Vector
 ) where
 
 import Control.Monad.State
-import System.Random as R
+import System.Random
 import Geometry.Angle
 import Geometry.Space
 import Utils
@@ -44,7 +44,7 @@ type Velocity = Vector
 instance Near Vector where
   near dec v1 v2 = magnitude (v2 |- v1) < 1/10^dec
 
-instance Random Vector where
+instance {-# OVERLAPPING #-} Random Vector where
   randomR ((x1,y1),(x2,y2)) g = ((x,y), g3)
     where
       (x, g2) = randomR (x1, x2) g
